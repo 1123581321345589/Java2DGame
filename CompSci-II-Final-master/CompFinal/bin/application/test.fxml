@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="718.0" prefWidth="1086.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPageController">
+<children>
+      <ImageView blendMode="SRC_ATOP" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../resources/Background.jpg" />
+         </image>
+      </ImageView>
+      <TitledPane alignment="CENTER" animated="false" blendMode="DIFFERENCE" cache="true" collapsible="false" contentDisplay="CENTER" expanded="false" layoutX="1.0" layoutY="127.0" prefHeight="281.0" prefWidth="1920.0" text="SPACE DEFENDER" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </TitledPane>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="897.0" layoutY="408.0" mnemonicParsing="false" onAction="#startGameButton" text="Start Game" textAlignment="CENTER">
+         <font>
+            <Font name="PressStart2P" size="18.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <Button layoutX="866.0" layoutY="524.0" mnemonicParsing="false" onAction="#loadHighScore" text="High Score Screen">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+      <Button layoutX="926.0" layoutY="597.0" mnemonicParsing="false" onAction="#loadSettings" text="Settings">
+         <font>
+            <Font name="Dubai Light" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+</children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

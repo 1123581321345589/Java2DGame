@@ -1,0 +1,32 @@
+package application;
+	
+import java.io.IOException;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.control.Button;
+
+public class Main extends Application {
+	@Override
+	public void start(Stage primaryStage) throws IOException {
+		try {
+			Parent root = FXMLLoader.load(getClass().getResource("test.fxml")); //to import SceneBuilder fxml document
+			Scene scene = new Scene(root);
+			primaryStage.setTitle("MyExampleApp");	
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+
+}
